@@ -1,0 +1,14 @@
+Revisi Web Depanel
+
+Alter Hapus. (uwes)
+Button Search. (uwes)
+Edit Option Pakai Jqeury Selected. (uwes)
+Upload Gambar Pakai TinyMCE.
+Newsflash, Kartun, Banner Jadi 1. (uwes)
+Alret Sukses.
+Nama Postingan ganti POST. (uwes)
+Upload 2.
+Deskripsi Departemen Tambahi Gambar.
+Paging.
+Featured Centang.
+Rename Gambar.

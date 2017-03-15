@@ -1,0 +1,18 @@
+.toppost{
+  height: 20px;
+}
+.paddingright{
+  margin-right: 5px;
+}
+.paddinglabel{
+  margin-left: 25px;
+}
+.paddingpagination{
+  margin-left: 15px;
+}
+.clearfix{
+  clear: both;
+}
+.bordered{
+  border:1px solid #ddd;
+}

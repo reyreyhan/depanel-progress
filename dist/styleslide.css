@@ -1,0 +1,288 @@
+/* slider css */
+
+/* glide */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+.slide-item{
+  height: 100%;
+  float: left;
+  clear: none;
+}
+
+.slider-arrow {
+  position: absolute;
+  display: block;
+  margin-bottom: -20px;
+  padding: 20px;
+}
+
+.slider-arrow--right {
+  bottom: 50%;
+  right: 30px;
+}
+
+.slider-arrow--left {
+  bottom: 50%;
+  left: 30px;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 60px;
+}
+
+.slider-nav__item {
+  width: 12px;
+  height: 12px;
+  float: left;
+  clear: none;
+  display: block;
+  margin: 0 5px;
+  background: #fff;
+}
+
+.slider-nav__item:hover {
+  background: #ccc;
+}
+
+.slider-nav__item--current {
+  background: #ccc;
+}
+
+/* unique slider css */
+.slider-nav__item {
+  border-radius:50%;
+}
+.slider-arrow--right, .slider-arrow--left {
+  background-image: url( "../assets/image/glide-arrows.png" );
+  background-repeat:no-repeat;
+  width: 17px;
+height: 28px;
+display: block;
+padding: 0;
+}
+.slider-arrow--right {
+background-position: -17px 0;
+}
+.slider-arrow--left {
+
+}
+
+/* home page slider - start */
+.slider1 .slide-item {
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider1 {
+  color:#fff;
+}
+.slider1 .content {
+  margin-top:37%;
+  margin-bottom:20%;
+}
+.slider1 h2 {
+  font-family:'lobster', sans-serif;
+  font-size:5em;
+  font-weight:200;
+  margin-bottom: 1.2em;
+  text-shadow: 0 .05em .05em #c25b1d !important;
+}
+.slider1 .note {
+  max-height:5em;
+  min-height:5em;
+  max-width:5em;
+  min-width:5em;
+  display:inline !important;
+}
+/* home page slider - start */
+
+/* resume page slider - highlights - start */
+.slider2, .slider3 {
+  background-color:#CEE4ED;
+  border: 1px solid #B8E3F5;
+  border-radius:5px;
+  margin-bottom:2em;
+}
+.slider2 .content, .slider3 .content {
+  margin-bottom:0%;
+  margin-top:5%;
+}
+.slider2 .slider-arrow--right, .slider2 .slider-arrow--left,
+.slider3 .slider-arrow--right, .slider3 .slider-arrow--left, 
+.slider5 .slider-arrow--right, .slider5 .slider-arrow--left{
+  background-image: url( "../assets/image/glide-arrows.png" );
+}
+.slider2 .slider-nav, .slider3 .slider-nav, .slider5 .slider-nav {
+  display:none;
+}
+/* resume page slider - highlights - end */
+
+
+@media only screen and (max-width : 992px) {
+	.ui.vertical.menu {
+		width:100%;
+	}
+	.stuck {position:relative;}
+	.slider2 .content, .slider3 .content {padding-left:12% !important;
+		padding-right:12% !important;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.slider1 h2 {
+		font-size:2.5em;
+	}
+	.slider1 .note {
+		max-height: 4em;
+		min-height: 4em;
+		max-width: 4em;
+		min-width: 4em;
+	}
+	.slider2 .content, .slider3 .content {padding-left:12% !important;
+		padding-right:12% !important;
+	}
+	/* because the line-width was too long */
+	.ui.stackable.page.grid.like-this>.row>.column {
+		padding-left:5em !important;
+		padding-right:5em !important;
+	}
+	.ui.vertical.menu {
+		width:100%;
+	}
+	.stuck {position:relative;}
+	
+	.resume .resume-download {
+		font-size:1em;
+	}
+	body .ui.grid.footer-mail .row:first-child>.column:first-child{
+		padding-top:3em !important;
+	}
+	.footer .contact p.centered {
+		font-size:1.2em;
+	}
+}
+@media only screen and (max-width : 480px) {
+	body section {
+		padding:1em 0;
+	}
+	.slider1 {
+		padding-top:55px;
+	}
+	.slider1 h2 {
+		font-size:1.8em;
+	}
+	.slider1 .note {
+		max-height: 2.8em;
+		min-height: 2.8em;
+		max-width: 2.8em;
+		min-width: 2.8em;
+	}
+	.slider1 .content {
+		margin-top:30%;
+		margin-bottom:30%;
+	}
+	.slider-nav {display:none;visibility:hidden;}
+	.slider2 .content, .slider3 .content {padding-left:12% !important;
+		padding-right:18% !important;
+	}
+	.ui.vertical.menu {
+		width:100%;
+	}
+	.stuck {position:relative;}
+
+	.resume .resume-download {
+		font-size:1em;
+	}
+	.masthead {
+		padding-top:120px;
+	}
+	body .ui.grid.footer-mail .row:first-child>.column:first-child{
+		padding-top:3em !important;
+	}
+	.footer .contact p.centered {
+		font-size:1.2em;
+	}
+	#leftButton.computer.only {
+		display:none;
+	}
+	.mobile.only {
+		display:block;
+	}
+	.bit.layout.content {
+	padding-top:90px;
+	}
+	#footerWrap .ui.page.grid.footer-top {
+		padding-bottom:20px;
+	}
+	body h1.ui.header {
+	font-size:3em;
+	font-weight:200;
+}
+.masthead.segment h1.ui.header {
+	margin-top:.5em;
+}
+}
+@media only screen and (max-width : 320px) {
+	body section {
+		padding:1em 0;
+	}
+	.slider1 {
+		padding-top:55px;
+	}
+	.slider1 h2 {
+		font-size:1.8em;
+	}
+	.slider1 .note {
+		max-height: 2.8em;
+		min-height: 2.8em;
+		max-width: 2.8em;
+		min-width: 2.8em;
+	}
+	.slider-nav {display:none;visibility:hidden;}
+	.slider1 .content {
+		margin-top:30%;
+		margin-bottom:30%;
+	}
+	.slider2 .content, .slider3 .content {padding-left:12% !important;
+		padding-right:12% !important;
+	}
+	.ui.vertical.menu {
+		width:100%;
+	}
+	.stuck {position:relative;}
+	.resume .resume-download {
+		font-size:1em;
+	}
+	.masthead {
+		padding-top:120px;
+	}
+	body .ui.grid.footer-mail .row:first-child>.column:first-child{
+		padding-top:3em !important;
+	}
+	.footer .contact p.centered {
+		font-size:1.2em;
+	}
+	#leftButton.computer.only {
+		display:none;
+	}
+	.mobile.only {
+		display:block;
+	}
+	.bit.layout.content {
+	padding-top:90px;
+}
